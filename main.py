@@ -9,7 +9,7 @@ from sqlalchemy.sql.expression import insert
 
 
 su_name = 'postgres'
-su_pass = 'mitgard5995'
+su_pass = ''
 db_name = 'musicapp'
 u_name = 'test'
 u_pass = 'testpassword'
