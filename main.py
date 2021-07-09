@@ -10,8 +10,10 @@ def select_request_by_hw5(u_name, u_pass):
 
     # 1 количество исполнителей в каждом жанре:
     sel1 = connection.execute("""
-    SELECT genre_id, COUNT(artist_id) FROM public."GenreArtists"
-    GROUP BY genre_id;"""
+    SELECT name, COUNT(artist_id) FROM public."Genre"
+    JOIN public."GenreArtists" ON "Genre".id =
+    public."GenreArtists".genre_id
+    GROUP BY name;
                               )
     print(sel1.fetchall())
 
