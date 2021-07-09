@@ -4,7 +4,7 @@ from random import randint
 
 if __name__ == '__main__':
     su_name = 'postgres'
-    su_pass = '1una}{od'
+    su_pass = ''
     u_name = 'test'
     u_pass = 'testpassword'
     db = MuscAppDb(su_name, su_pass, u_name, u_pass, db_allready_exist=False)
